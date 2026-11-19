@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sitio oficial en GitHub Pages de mufasacubana8-pixel" />
+  <title>mufasacubana8-pixel | GitHub Pages</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+      --border: rgba(148, 163, 184, 0.18);
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --surface: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --accent: #0284c7;
+        --accent-hover: #0369a1;
+        --border: rgba(15, 23, 42, 0.12);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 2.5rem;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 620px;
+      margin-bottom: 1.75rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.65rem 1.25rem;
+      border-radius: 0.5rem;
+      transition: all 0.2s ease;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background-color: var(--accent);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+    }
+
+    .btn-secondary {
+      background-color: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+    }
+
+    main {
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 4rem;
+      flex: 1;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent);
+    }
+
+    .card h2 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="badge">GitHub Pages · mufasacubana8-pixel/User</span>
+    <h1>Hola, soy mufasacubana8-pixel</h1>
+    <p class="subtitle">
+      Espacio personal y portafolio en GitHub Pages. Aquí comparto proyectos, herramientas, experimentos y enlaces destacados.
+    </p>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://github.com/mufasacubana8-pixel" target="_blank" rel="noopener noreferrer">
+        Ver perfil en GitHub
+      </a>
+      <a class="btn btn-secondary" href="https://github.com/mufasacubana8-pixel/User" target="_blank" rel="noopener noreferrer">
+        Repositorio User
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid">
+      <article class="card">
+        <h2>Proyecto 01</h2>
+        <p>Describe aquí tu primer proyecto principal, aplicación web o experimento destacado.</p>
+        <a href="https://github.com/mufasacubana8-pixel" target="_blank" rel="noopener noreferrer">Explorar →</a>
+      </article>
+
+      <article class="card">
+        <h2>Proyecto 02</h2>
+        <p>Añade una breve descripción de otra iniciativa, utilidad o repositorio que quieras mostrar.</p>
+        <a href="https://github.com/mufasacubana8-pixel" target="_blank" rel="noopener noreferrer">Explorar →</a>
+      </article>
+
+      <article class="card">
+        <h2>Contacto & Enlaces</h2>
+        <p>Conecta conmigo o revisa mis actualizaciones y publicaciones más recientes.</p>
+        <a href="https://github.com/mufasacubana8-pixel/User/deployments/github-pages" target="_blank" rel="noopener noreferrer">Estado del despliegue →</a>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> mufasacubana8-pixel · Publicado con GitHub Pages</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
